@@ -60,6 +60,8 @@ const symbol = (state: State) => {
  */
 export const cac = (name = '') => new CAC(name);
 
+export { isCancel };
+
 export interface TextOptions {
 	message: string;
 	placeholder?: string;
@@ -582,15 +584,15 @@ export const note = (message = '', title = '') => {
 	const msg = lines
 		.map(
 			(ln) =>
-				`${color.white(S_BAR)}  ${ln}${' '.repeat(len - strip(ln).length)}${color.white(
+				`${color.gray(S_BAR)}  ${color.gray(ln)}${' '.repeat(len - strip(ln).length)}${color.gray(
 					S_BAR
 				)}`
 		)
 		.join('\n');
 	process.stdout.write(
-		`${color.white(S_BAR)}\n${color.green(S_STEP_SUBMIT)}  ${color.reset(title)} ${color.white(
+		`${color.gray(S_BAR)}\n${color.green(S_STEP_SUBMIT)}  ${color.reset(title)} ${color.gray(
 			S_BAR_H.repeat(Math.max(len - titleLen - 1, 1)) + S_CORNER_TOP_RIGHT
-		)}\n${msg}\n${color.white(S_CONNECT_LEFT + S_BAR_H.repeat(len + 2) + S_CORNER_BOTTOM_RIGHT)}\n`
+		)}\n${msg}\n${color.gray(S_CONNECT_LEFT + S_BAR_H.repeat(len + 2) + S_CORNER_BOTTOM_RIGHT)}\n`
 	);
 };
 
