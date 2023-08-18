@@ -3,6 +3,10 @@
 ## Commands CLI
 
 ```
+import {
+  cac
+} from 'unprompts';
+
 const cli = cac("package-name");
 
 cli
