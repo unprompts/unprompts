@@ -11,8 +11,8 @@ npm install unprompts
 [Documentation](https://unprompts.vercel.app/)
 
 ## CLI Demo
-![cli](https://github.com/hunghg255/unprompts/blob/master/.github/assets/cli.png
+![cli](https://res.cloudinary.com/hunghg255/image/upload/v1692528009/cli_wa3unr.png)
 
 ## Prompts Demo
 
-![unprompts](https://github.com/hunghg255/unprompts/blob/master/.github/assets/prompts.png
+![unprompts](https://res.cloudinary.com/hunghg255/image/upload/v1692528009/prompts_zcvefh.png)
