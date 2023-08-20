@@ -4,3 +4,4 @@
 .github
 ./test
 node_modules
+./docs

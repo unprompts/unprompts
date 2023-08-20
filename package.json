@@ -1,6 +1,6 @@
 {
   "name": "unprompts",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "license": "MIT",
   "sideEffects": false,
   "exports": {
@@ -19,11 +19,10 @@
   ],
   "scripts": {
     "build": "unbuild",
-    "dev": "unbuild --stub",
-    "test:cli": "node ./dist/cli.mjs -w -p 1234 -c awesome",
+    "dev": "unbuild --stub && esno play/index.ts --foo foo --bar bar",
     "release": "changeset publish",
     "lint": "tsc --noEmit",
-    "start": "esno src/index.ts",
+    "start": "esno play/index.ts",
     "test": "vitest"
   },
   "author": "hunghg255",
