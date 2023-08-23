@@ -5,8 +5,9 @@
 Use CAC as simple argument parser:
 
 ```js
-// examples/basic-usage.js
-const cli = require('cac')()
+import { cac } from 'unprompts';
+
+const cli = cac("name-command");
 
 cli.option('--type <type>', 'Choose a project type', {
   default: 'node',
@@ -22,8 +23,9 @@ console.log(JSON.stringify(parsed, null, 2))
 ## Display Help Message and Version
 
 ```js
-// examples/help.js
-const cli = require('cac')()
+import { cac } from 'unprompts';
+
+const cli = cac("name-command");
 
 cli.option('--type [type]', 'Choose a project type', {
   default: 'node',
@@ -50,7 +52,9 @@ cli.parse()
 You can attach options to a command.
 
 ```js
-const cli = require('cac')()
+import { cac } from 'unprompts';
+
+const cli = cac("name-command");
 
 cli
   .command('rm <dir>', 'Remove a dir')
@@ -90,7 +94,9 @@ When using brackets in command name, angled brackets indicate required command a
 When using brackets in option name, angled brackets indicate that a string / number value is required, while square bracket indicate that the value can also be `true`.
 
 ```js
-const cli = require('cac')()
+import { cac } from 'unprompts';
+
+const cli = cac("name-command");
 
 cli
   .command('deploy <folder>', 'Deploy a folder to AWS')
@@ -127,7 +133,9 @@ This will let CAC set the default value of `config` to true, and you can use `--
 The last argument of a command can be variadic, and only the last argument. To make an argument variadic you have to add `...` to the start of argument name, just like the rest operator in JavaScript. Here is an example:
 
 ```js
-const cli = require('cac')()
+import { cac } from 'unprompts';
+
+const cli = cac("name-command");
 
 cli
   .command('build <entry> [...otherFiles]', 'Build your app')
@@ -150,7 +158,9 @@ cli.parse()
 Dot-nested options will be merged into a single option.
 
 ```js
-const cli = require('cac')()
+import { cac } from 'unprompts';
+
+const cli = cac("name-command");
 
 cli
   .command('build', 'desc')
@@ -172,7 +182,9 @@ cli.parse()
 Register a command that will be used when no other command is matched.
 
 ```js
-const cli = require('cac')()
+import { cac } from 'unprompts';
+
+const cli = cac("name-command");
 
 cli
   // Simply omit the command name, just brackets
@@ -228,24 +240,11 @@ yarn add @types/node --dev
 Then everything just works out of the box:
 
 ```js
-const { cac } = require('cac')
+const { cac } = require('unprompts')
 // OR ES modules
-import { cac } from 'cac'
+import { cac } from 'unprompts'
 ```
 
-## With Deno
-
-```ts
-import { cac } from 'https://unpkg.com/cac/mod.ts'
-
-const cli = cac('my-program')
-```
-
-## References
-
-**💁 Check out [the generated docs](https://cac-api-doc.egoist.sh/classes/_cac_.cac.html) from source code if you want a more in-depth API references.**
-
-Below is a brief overview.
 
 ## CLI Instance
 
