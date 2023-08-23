@@ -1,6 +1,6 @@
 {
   "name": "unprompts",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "license": "MIT",
   "sideEffects": false,
   "exports": {
@@ -40,5 +40,16 @@
     "unbuild": "^1.2.1",
     "wrap-ansi": "^8.1.0"
   },
-  "keywords": []
+  "keywords": [
+    "CLI",
+    "Prompt"
+  ],
+  "bugs": {
+    "url": "https://github.com/hunghg255/unprompts/issues"
+  },
+  "homepage": "https://github.com/hunghg255/unprompts#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hunghg255/unprompts.git"
+  }
 }
