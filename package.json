@@ -45,11 +45,11 @@
     "Prompt"
   ],
   "bugs": {
-    "url": "https://github.com/hunghg255/unprompts/issues"
+    "url": "https://github.com/unprompts/unprompts/issues"
   },
-  "homepage": "https://github.com/hunghg255/unprompts#readme",
+  "homepage": "https://github.com/unprompts/unprompts#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hunghg255/unprompts.git"
+    "url": "git+https://github.com/unprompts/unprompts.git"
   }
 }
