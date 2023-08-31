@@ -1,23 +1,26 @@
-# Unprompts
+---
+layout: home
 
-## Install
+hero:
+  name: "UnPrompts"
+  text: "Full-featured CLI library"
+  tagline: CLI library for Node.js
+  image:
+    src: /banner.png
+    alt: UnPrompts logo
+  actions:
+    - theme: brand
+      text: Getting Started
+      link: /getting-started
 
-```bash
-npm install unprompts
-```
-
-## Documentation
-
-[Documentation](https://unprompts.vercel.app/)
-
-## CLI Demo
-
-- [Example Repo](https://github.com/hunghg255/ctun)
-
-![cli](https://res.cloudinary.com/hunghg255/image/upload/v1692528009/cli_wa3unr.png)
-
-## Prompts Demo
-
-- [Example Repo](https://github.com/hunghg255/create-template-fe)
-
-![unprompts](https://res.cloudinary.com/hunghg255/image/upload/v1692528009/prompts_zcvefh.png)
+features:
+  - title: Lightweight
+    details: Dependencies are bundled and minified
+    icon: 🎈
+  - title: Developer friendly
+    details: Strongly typed, converts flags and parameters to camelCase
+    icon: 💻
+  - title: Parses parameters
+    details: No need to read them by yourself
+    icon: 🧬
+---
