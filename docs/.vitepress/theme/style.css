@@ -88,7 +88,3 @@
 .DocSearch {
 	--docsearch-primary-color: var(--vp-c-brand) !important;
 }
-
-.image-container {
-  display: none;
-}
